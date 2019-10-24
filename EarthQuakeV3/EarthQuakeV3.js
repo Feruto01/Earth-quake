@@ -3,42 +3,25 @@ var centerLongtitude = 0;
 var Latitude = 30;
 var Longtitude  = 40;
 var zoom = 1;
-
-
 var  worldMap;
 
-
-
-
 function setup() {
-
   preload();
-createCanvas (600, 600);
-
-//  fullScreen();
+  createCanvas (600, 600);
+  //  fullScreen();
   translate (width/2, height/2);
   imageMode(CENTER);
   image (worldMap, 0, 0);
   fill (255, 0, 255);
 }
 
-
 function draw() {
 }
-
-
-
-
 
 function preload() {
   worldMap = loadImage ("World Map.jpg");
   worldMap.resize(width, height);
 }
-
-
-
-
-
 
 /*
 function mercX(){
